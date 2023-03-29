@@ -18,20 +18,15 @@ function App() {
   useEffect(() =>{
     getMovies()
   },[])
-  console.log(movies?.Search)
+  console.log(movies)
 
   return (
     <>
-    {/*
     <Routes>
         <Route element={<Layout/>}>
           <Route index element={<Moviecard movies={movies} setSearch={setSearch} getMovies={getMovies} />} />
-          <Route path=':slug' element={<RecipePage recipes={recipes} />}/>
         </Route>
       </Routes>
-  */}
-      <Layout/>
-      <Main movies={movies} setSearch={setSearch} getMovies={getMovies} />
     </>
   )
 }

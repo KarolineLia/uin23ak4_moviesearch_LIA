@@ -1,16 +1,16 @@
-import Main from "./Main";
-import Moviecard from "./Moviecard";
-import Search from "./Search";
+import { Link, Outlet } from "react-router-dom";
 
 
 export default function Layout() {
     return(
         <div id="container">
             <header>
-                <h1>Filmsøk</h1>
+                <Link to="/">
+                    <h1>Filmsøk</h1>
+                </Link>
             </header>
             <main>
-
+                <Outlet/>
             </main>
 
         </div>

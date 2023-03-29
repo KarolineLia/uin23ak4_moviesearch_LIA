@@ -10,7 +10,7 @@ export default function Search({setSearch, getMovies}){
 
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="search">
             <input type="search" placeholder="James Bond..." onChange={handleSearch} />
             <button type="submit" onClick={getMovies}>Søk her</button>
         </form>
