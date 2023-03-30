@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 
-export default function Moviecard({title, img, published, imdb}){
+export default function Moviecard({title, img, published, imdb, slug}){
     if(img === "N/A") {
         img = "https://placehold.jp/150x150.png"
     }
@@ -31,6 +32,7 @@ export default function Moviecard({title, img, published, imdb}){
             <ul>
                 <li>{info.Actors}</li>
             </ul>
+            <Link to={slug} className="link" state={info}>Mer info</Link>
         </article>
     )
 }

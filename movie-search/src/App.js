@@ -3,6 +3,7 @@ import './css/main.css'
 import { useEffect, useState } from 'react'
 import {Route, Routes} from 'react-router-dom'
 import Searchresults from './Components/Searchresults';
+import Moviepage from './Components/Moviepage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Routes>
         <Route element={<Layout/>}>
           <Route index element={<Searchresults movies={movies} setSearch={setSearch} getMovies={getMovies} />} />
+          <Route path=':slug' element={<Moviepage movies={movies}/>}/>
         </Route>
     </Routes>
   )

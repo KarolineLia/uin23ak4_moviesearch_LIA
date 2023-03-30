@@ -10,7 +10,7 @@ export default function Searchresults({movies, setSearch, getMovies}){
         <h2>Filmer</h2>
         {/*<Moviecard />*/}
         {movies?.Search?.map((movie, index) => (
-                  <Moviecard key={index} type={movie?.Type} title={movie?.Title} published={movie?.Year} img={movie?.Poster} imdb={movie?.imdbID}/> 
+                  <Moviecard key={index} type={movie?.Type} title={movie?.Title} published={movie?.Year} img={movie?.Poster} imdb={movie?.imdbID} slug={movie?.Title.replace(/\s/g, "-").toLowerCase()}/> 
              
           ))}
         </section>
