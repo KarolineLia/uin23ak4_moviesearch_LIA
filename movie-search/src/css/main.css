@@ -35,6 +35,11 @@ main article {
 main article p {
   color: #916953;
 }
+main article ul {
+  color: #916953;
+  list-style: none;
+  padding: 0;
+}
 
 #search input[type=search i] {
   padding: 6px;

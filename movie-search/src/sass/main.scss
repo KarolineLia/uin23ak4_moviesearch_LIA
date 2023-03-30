@@ -39,6 +39,11 @@ main {
         p{
             color: $raw-umber;
         }
+        ul{
+            color: $raw-umber;
+            list-style: none;
+            padding: 0;
+        }
     }
 }
 
