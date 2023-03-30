@@ -1,10 +1,58 @@
+$white: #FFFFFF;
+$snow: #FAF6F6; 
+$mimi-pink: #FCDDF2;
+$rosy-brown: #CF8E80;
+$raw-umber: #916953;
+
 body {
-    background: #f3f3f3;
+    background: $white;
     padding-top: 0;
 }
 
 #container {
     width: 100%;
     max-width: 1200px;
-    background-color: black;
+    background-color: $snow;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    .movie-overview {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        h2 {
+            width: 100%;
+        }
+    }
+    article {
+        max-width: 350px;
+        width: 100%;
+        background-color: $mimi-pink;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        outline: $rosy-brown solid 3px;
+        p{
+            color: $raw-umber;
+        }
+    }
+}
+
+#search {
+    input[type="search" i] {
+        padding: 6px;
+        font-size: 17px;
+        border: 2px solid $raw-umber;
+    }
+    button {
+        padding: 6px;
+        font-size: 17px;
+        border: 2px solid $raw-umber;;
+        background-color: $raw-umber;
+        color: $white;
+    }
 }

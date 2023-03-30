@@ -1,12 +1,52 @@
 body {
-  background: #f3f3f3;
+  background: #FFFFFF;
   padding-top: 0;
 }
 
 #container {
   width: 100%;
   max-width: 1200px;
-  background-color: black;
+  background-color: #FAF6F6;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .movie-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+main .movie-overview h2 {
+  width: 100%;
+}
+main article {
+  max-width: 350px;
+  width: 100%;
+  background-color: #FCDDF2;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  outline: #CF8E80 solid 3px;
+}
+main article p {
+  color: #916953;
+}
+
+#search input[type=search i] {
+  padding: 6px;
+  font-size: 17px;
+  border: 2px solid #916953;
+}
+#search button {
+  padding: 6px;
+  font-size: 17px;
+  border: 2px solid #916953;
+  background-color: #916953;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
